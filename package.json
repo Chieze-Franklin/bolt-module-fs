@@ -1,0 +1,49 @@
+{
+  "name": "bolt-module-fs",
+  "version": "1.2.2",
+  "description": "Module to install /api/fs routes in Bolt",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Chieze-Franklin/bolt-module-fs"
+  },
+  "author": "Chieze Franklin",
+  "bugs": {
+    "url": "https://github.com/Chieze-Franklin/bolt-module-fs/issues"
+  },
+  "dependencies": {
+    "bolt-internal-checks": "*",
+    "bolt-internal-config": "*",
+    "bolt-internal-defs": "*",
+    "bolt-internal-errors": "*",
+    "bolt-internal-get-routes": "*",
+    "bolt-internal-models": "*",
+    "bolt-internal-schemata": "*",
+    "bolt-internal-setup": "*",
+    "bolt-internal-utils": "*"
+  },
+  "keywords": [
+    "bolt",
+    "module",
+    "fs",
+    "bolt-module-fs"
+  ],
+  "bolt": {
+    "displayName": "Bolt File System Module",
+    "collections": {
+      "fs": {
+        "guests": "*",
+        "tenants": [
+          "bolt"
+        ]
+      }
+    },
+    "module": true,
+    "system": true,
+    "routers": {
+      "bolt-api-fs": {
+        "main": "routers/api-fs",
+        "root": "/api/fs"
+      }
+    }
+  }
+}
